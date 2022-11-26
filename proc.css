@@ -41,9 +41,9 @@
 .proc-title{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    top: 20px;
-    left: 150px;
+    padding-top: 100px;
+    justify-content: center;
+    gap: 120px;
     border: transparent 50px solid;
 }
 .proc-title img{
@@ -53,4 +53,15 @@
 }
 .span{
     font-size: 100px;
+}
+.title-proc button{
+    width: 128px;
+    height: 64px;
+    background:#01e3e3;
+    border-radius: 32px;
+    border-color: transparent;
+}
+button > a{
+    color: #fae5e3;
+    text-decoration: none;
 }
