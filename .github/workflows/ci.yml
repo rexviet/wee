@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: WeeSmartVN CI
 
 on:
   push:
@@ -19,3 +19,4 @@ jobs:
         pwd
         rm -rf /var/www/wee/*
         cp -R $(pwd)/* /var/www/wee
+        echo visit: https://weesmartvn.com
