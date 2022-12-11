@@ -22,6 +22,7 @@ jobs:
         echo visit: https://weesmartvn.com
     - name: Clear Cache
       run: |
+        echo "${{secrets.CLOUDFLARE_KEY}}"
         curl --location --request POST 'https://api.cloudflare.com/client/v4/zones/efcb1cef31433992425cacfbfb245460/purge_cache' \
             --header 'Content-Type: application/json' \
             --header 'X-Auth-Email: rexviet@gmail.com' \
