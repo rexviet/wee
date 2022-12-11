@@ -25,10 +25,12 @@ jobs:
         curl --location --request POST 'https://api.cloudflare.com/client/v4/zones/efcb1cef31433992425cacfbfb245460/purge_cache' \
             --header 'Content-Type: application/json' \
             --header 'X-Auth-Email: rexviet@gmail.com' \
-            --header 'X-Auth-Key: 7c4763ac9c1bf24ed463be0cc6c82f8e97fb9' \
-            --header 'Cookie: __cflb=0H28vgHxwvgAQtjUGU56Rb8iNWZVUvXhtmhFGrTeSNy; __cfruid=1b043d41af712ef47329eaac5b0d6541816adcff-1670738508' \
+            --header 'X-Auth-Key: ${{secrets.CLOUDFLARE_KEY}}' \
             --data-raw '{
               "files": [
-                "https://weesmartvn.com/*"
+                "https://weesmartvn.com/*",
+                "https://weesmartvn.com/index.html",
+                "https://weesmartvn.com/style/*.css",
+                "https://weesmartvn.com/script.js"
               ]
             }'
