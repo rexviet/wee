@@ -25,7 +25,7 @@ jobs:
         curl --location --request POST 'https://api.cloudflare.com/client/v4/zones/efcb1cef31433992425cacfbfb245460/purge_cache' \
             --header 'Content-Type: application/json' \
             --header 'X-Auth-Email: rexviet@gmail.com' \
-            --header 'X-Auth-Key: ${{secret.CLOUDFLARE_KEY}}' \
+            --header 'X-Auth-Key: ${{secrets.CLOUDFLARE_KEY}}' \
             --data-raw '{
               "files": [
                 "https://weesmartvn.com/*",
