@@ -1,0 +1,13 @@
+.copyright{
+    height: 83px;
+    background: #20428B;
+}
+.copyright p{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: left;
+    color: #CFD6E1;
+    margin: 24px auto 32px 300px;
+}

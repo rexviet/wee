@@ -1,5 +1,87 @@
 .footer{
-    
-    height: 1054px;
+    height: 970px;
     background: #FFFFFF;
+    margin: 0 auto;
 }
+.form-container{
+    position: relative;
+    height: 364px;
+    width: 68vw;
+    margin: 43px auto;
+    background: rgba(251, 164, 171, 0.2);
+    border-radius: 129px 20px 20px 20px;   
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 0 74px;
+}
+.form-container span{
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #5E6282;
+    word-spacing: 2px;
+}
+input[type=text]{
+    padding: 15px 56px;
+    font-size: 24px;
+}
+.subscribe{
+    position: relative;
+    margin: 0 auto;
+}
+.subscribe input{
+    height: 40px;
+    width: 477px;
+    border: 1px solid rgba(251, 164, 171, 0.2) ;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.subscribe input::placeholder {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 44px;
+    color: #C7C7C7;
+    margin-top: 5px ;
+}
+.subscribe i{
+    position: absolute;
+    top: 104px;
+    left: 14.6%;
+    font-size: 23px;
+}
+.subscribe a{
+    width: 180px;
+    height: 64px;
+    text-decoration: none;
+    margin-left: 17px;
+    background: linear-gradient(180deg, #FAC6CA 0%, #FAC6CA 0.01%);
+    border-radius: 10px;
+    padding: 21px 26px 20px 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    color: #FFFEFE;
+}
+
+/*  */
+
+.contact-bottom{
+    margin-top: 47px;
+}
+.contact-bottom > ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 12px;
+}
+.contact-bottom > ul li{
+    width: 345px;
+}
+.divider{
+    width: 345px;
+    border-bottom: 1px solid red;
+}
+/* ul li > .title{
+    content: '';
+    border-bottom: 1px solid red;
+} */

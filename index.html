@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/slider.css">
     <link rel="stylesheet" href="./style/banner.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/copyright.css">
     <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Wee</title>
@@ -28,7 +32,7 @@
         </div>
     </div>
     <div class="nav-bottom">
-        <img src="./img/wee.png" alt="Wee">
+        <img src="./img/logo.png" alt="Wee">
         <ul class="menu">
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Về chúng tôi</a></li>
@@ -39,21 +43,138 @@
         
         <div class="notification">
             <a href="#" class="fa fa-search gap"></a>
-            <a href="#" class="fa fa-cart-arrow-down gap"></a>
+            <a href="#" class="fa fa-cart-arrow-down gap">
+                <span class="badge">2</span>
+            </a>
+            
             <a href="#" class="fa fa-user gap"></a>
         </div>
     </div>
 
     <div class="slider">
-
+        <div class="arrow">
+            <a href="#" class="fa fa-chevron-left left" aria-hidden="true"></a>
+            <a href="#" class="fa fa-chevron-right right" aria-hidden="true"></a>
+        </div>
+        <div class="content">
+            <h1 class="text">Miếng dán thông minh Wee</h1>
+            <h2 class="text">Xoa dịu cơn đau nhanh chóng</h2>
+            <p class="text">Tấm dệt may thông minh với cảm biến cơ thể, giúp miếng dán luôn giữ ở nhiệt độ do bạn điều chỉnh.</p>
+            <p class="text">Ngoài ra, với thiết kế nhỏ gọn giúp cho bạn có thể mang đi đến bất kỳ nơi đâu một cách dễ dàng. </p>
+        </div>
+        <img src="./img/banner.png" alt="Image">
     </div>
 
     <div class="banner">
-
+        <h1>Sản phẩm bán chạy</h1>
+        <div class="product-lists">
+            <div class="product">
+                <img src="./img/Product_1.png" alt="">
+                <div class="product-content">
+                    <div class="display">
+                        <div class="display-star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>1.599.000 VNĐ</p>
+                    </div>
+                    <div class="content">
+                        <span>Miếng dán thông minh</span>
+                        <p>Với công nghệ hiện đại, giúp giảm đau nhanh chóng và hiệu quả.</p>
+                        <p class="review">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./img/Product_2.png" alt="">
+                <div class="product-content">
+                    <div class="display">
+                        <div class="display-star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>659.000 VNĐ</p>
+                    </div>
+                    <div class="content">
+                        <span>Cốc nguyệt san</span>
+                        <p>Cốc được thiết kế thông minh giúp bạn thoải mái hoạt động lên đến 12 tiếng.</p>
+                        <p class="review">Reviews (48)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./img/Product_3.png" alt="">
+                <div class="product-content">
+                    <div class="display">
+                        <div class="display-star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>79.000 VNĐ</p>
+                    </div>
+                    <div class="content">
+                        <span>Băng vệ sinh siêu thấm hút</span>
+                        <p>Với thiết kế 7 lớp siêu thấm hút, đưa đến sự dễ chịu và khô thoáng cả ngày.</p>
+                        <p class="review">Reviews (74)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
+        <div class="form-container">
+            <span>Đăng kí thông tin - Nhận ngay ưu đãi</span>
+            <div class="subscribe">
+                <input type="text" placeholder="Enter email">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
 
+        <div class="contact-bottom">
+            <ul>
+                <li>
+                    <div class="divider">
+                        <img src="./img/logo.png" alt="logo" class="title">
+                    </div>
+                    <p>35 Vườn Chuối, Phường 6, Quận 3, TP HCM</p>
+                    <p>(+84) 28 36 363 366</p>
+                    <p>cs@weesmartvn.com</p>
+                </li>
+                <li>
+                    <div class="divider">
+                        <span class="title">Sản phẩm</span>
+                    </div>
+                    <p>Miếng dán thông minh</p>
+                    <p>Cốc nguyệt san</p>
+                    <p>Băng vệ sinh</p>
+                </li>
+                <li>
+                    <div class="divider">
+                        <span class="title">Thông tin thêm</span>
+                    </div>
+                    <p>Trang chủ</p>
+                    <p>Về chúng tôi</p>
+                    <p>Địa chỉ cửa hàng</p>
+                    <p>FAQs</p>
+                    <p>Liên hệ</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2021 Company Name | Designed by TemplateMo</p>
     </div>
 </body>
 </html>
