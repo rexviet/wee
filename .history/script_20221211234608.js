@@ -38,12 +38,12 @@ window.onload = async function(e){
     //   console.log('snapshot:', snapshot.val());
       const number = await writeUserData('rexviet@gmail.com');
       console.log('number:', number);
-      $('.modal p').text(number);
+
       $( '.modal' ).addClass( 'open' );
 
-        if ( $( '.modal' ).hasClass( 'open' ) ) {
-            $('body').append('<div class="backdrop">');
-        } 
+    if ( $( '.modal' ).hasClass( 'open' ) ) {
+        $('body').append('<div class="backdrop">');
+    } 
 
     $( '.close' ).click(function() {
         $( '.modal' ).removeClass( 'open' );

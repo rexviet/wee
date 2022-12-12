@@ -1,0 +1,143 @@
+/*
+Custom Css
+*/
+
+.my-slide {
+    background: linear-gradient(156.47deg, #FEA6C0 13.8%, rgba(233, 190, 203, 0) 102.18%);
+}
+
+h3.h2 {
+    /* position: absolute; */
+height: 36px;
+left: 0%;
+right: 33.67%;
+top: 64.59px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height, or 120% */
+
+display: flex;
+align-items: center;
+
+color: #20428B;
+}
+
+.my-img {
+    width: auto;
+height: 506.72;
+/* left: 861.5px;
+top: -3.59px; */
+}
+
+div.subcribe {
+    width: 68.8%;
+    height: 364.45px;
+
+    background: rgba(251, 164, 171, 0.2);
+    border-radius: 129px 20px 20px 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin-top: 43.27px;
+    margin-left: 291.5px;
+}
+
+section.subcribe-sec {
+    width: 100%;
+    height: 451px;
+}
+
+.logo-foot {
+width: 120px;
+height: 47.13px;
+left: 17.5px;
+top: 36.22px;
+}
+
+.text-footer {
+    color: #CFD6E1;
+}
+
+.border-line {
+    border-bottom: 1px solid #20428B;
+    width: 416px;
+    margin-top: 10px;
+}
+
+p#subcribe {
+    padding-top: 100px; 
+    position: absolute; 
+    left: calc(50% - 666.43px/2 + 0.09px); 
+    width: 666.43px; 
+    text-align: center;
+    font-family: poppins;
+    font-weight: 600 !important;;
+    font-size: 25.63px !important;
+    line-height: 43.57px;
+    color: #5E6282;
+}
+
+form#from-subcribe {
+    position: absolute;
+width: 595.98px;
+height: 69.33px;
+margin-left: calc(50% - 595.98px/2 + 35.49px);
+margin-top: 135.13px;
+}
+
+div#email {
+    position: absolute;
+    height: 63px;
+    left: -11.83%;
+    right: 28.94%;
+    top: 50%;
+}
+
+section.pt-6 {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 291.5px;
+
+width: 1871px;
+height: 451px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+}
+
+.pt-6 div.contaienr {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2.my-text-secondary {
+    margin-top: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25.629px;
+    line-height: 44px;
+    /* identical to box height, or 170% */
+
+    align-items: center;
+    text-align: center;
+
+    color: #5E6282;
+}

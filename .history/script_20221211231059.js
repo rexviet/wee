@@ -28,7 +28,7 @@ window.onload = async function(e){
       };
       
       // Initialize Firebase
-    //   const app = firebase.initializeApp(firebaseConfig);
+      const app = firebase.initializeApp(firebaseConfig);
       
       
       // Initialize Realtime Database and get a reference to the service
@@ -36,19 +36,7 @@ window.onload = async function(e){
 
     //   const snapshot = await getSubscriberByNumber(45);
     //   console.log('snapshot:', snapshot.val());
-      const number = await writeUserData('rexviet@gmail.com');
-      console.log('number:', number);
-      $('.modal p').text(number);
-      $( '.modal' ).addClass( 'open' );
-
-        if ( $( '.modal' ).hasClass( 'open' ) ) {
-            $('body').append('<div class="backdrop">');
-        } 
-
-    $( '.close' ).click(function() {
-        $( '.modal' ).removeClass( 'open' );
-        $('div.backdrop').remove();
-    });
+      writeUserData('rexviet@gmail.com');
 }
 
 const writeUserData = async (email) => {
@@ -94,11 +82,3 @@ const encodeEmail = (email) => {
 const decodeEmail = (encodedEmail) => {
     return encodedEmail.replace(/-at-/g, '@').replace(/-dot-/g, '.');
 }
-
-function modalCloseHandler() {
-    // modal.remove();
-    // modal = null;
-    
-    // backdrop.remove();
-    // backdrop = null;
-  }

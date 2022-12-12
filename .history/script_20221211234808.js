@@ -41,9 +41,9 @@ window.onload = async function(e){
       $('.modal p').text(number);
       $( '.modal' ).addClass( 'open' );
 
-        if ( $( '.modal' ).hasClass( 'open' ) ) {
-            $('body').append('<div class="backdrop">');
-        } 
+    if ( $( '.modal' ).hasClass( 'open' ) ) {
+        $('body').append('<div class="backdrop">');
+    } 
 
     $( '.close' ).click(function() {
         $( '.modal' ).removeClass( 'open' );

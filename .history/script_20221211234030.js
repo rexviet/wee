@@ -38,17 +38,24 @@ window.onload = async function(e){
     //   console.log('snapshot:', snapshot.val());
       const number = await writeUserData('rexviet@gmail.com');
       console.log('number:', number);
-      $('.modal p').text(number);
+
       $( '.modal' ).addClass( 'open' );
 
-        if ( $( '.modal' ).hasClass( 'open' ) ) {
-            $('body').append('<div class="backdrop">');
-        } 
+    if ( $( '.modal' ).hasClass( 'open' ) ) {
+        // $( '.container' ).addClass( 'blur' );
+        let backdrop = document.createElement("div");
+
+  backdrop.className = "backdrop";
+
+//   backdrop.addEventListener("click", modalCloseHandler);
+
+  document.body.append(backdrop);
+    } 
 
     $( '.close' ).click(function() {
         $( '.modal' ).removeClass( 'open' );
-        $('div.backdrop').remove();
-    });
+        $( '.container' ).removeClass( 'blur' );
+      });
 }
 
 const writeUserData = async (email) => {
@@ -94,11 +101,3 @@ const encodeEmail = (email) => {
 const decodeEmail = (encodedEmail) => {
     return encodedEmail.replace(/-at-/g, '@').replace(/-dot-/g, '.');
 }
-
-function modalCloseHandler() {
-    // modal.remove();
-    // modal = null;
-    
-    // backdrop.remove();
-    // backdrop = null;
-  }
