@@ -54,3 +54,22 @@
     top: 0;
     left: 0;
   }
+
+.modal .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal .content .close{
+  font-size: 48px;
+}
+.modal .content h1{
+  min-width: 200px;
+  display: block;
+}
+.modal .content p{
+  font-size: 48px !important;
+  font-weight: 600 !important;
+  color: rgb(223, 68, 68);
+}
