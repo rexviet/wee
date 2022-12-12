@@ -28,27 +28,42 @@ window.onload = async function(e){
       };
       
       // Initialize Firebase
-    //   const app = firebase.initializeApp(firebaseConfig);
-      
+      if (firebase.apps.length === 0) {
+        firebase.initializeApp(firebaseConfig);
+        }
       
       // Initialize Realtime Database and get a reference to the service
       const database = firebase.database();
 
     //   const snapshot = await getSubscriberByNumber(45);
     //   console.log('snapshot:', snapshot.val());
-      const number = await writeUserData('rexviet@gmail.com');
-      console.log('number:', number);
-      $('.modal p').text(number);
-      $( '.modal' ).addClass( 'open' );
-
-        if ( $( '.modal' ).hasClass( 'open' ) ) {
-            $('body').append('<div class="backdrop">');
-        } 
+      
 
     $( '.close' ).click(function() {
         $( '.modal' ).removeClass( 'open' );
         $('div.backdrop').remove();
     });
+    $('button.btn').click(async (event) => {
+        event.preventDefault();
+        const email = $('input.email-input').val();
+        console.log('email:',email );
+        const number = await writeUserData(email);
+        console.log('number:', number);
+        $('.modal p').text(number);
+        $( '.modal' ).addClass( 'open' );
+        $('body').append('<div class="backdrop">');
+    });
+    // $('button.btn').on('click', async () => {
+    //     console.log('email:', $('input.form-control').text());
+    //     // const number = await writeUserData('rexviet@gmail.com');
+    //     // console.log('number:', number);
+    //     // $('.modal p').text(number);
+    //     // $( '.modal' ).addClass( 'open' );
+
+    //     //     if ( $( '.modal' ).hasClass( 'open' ) ) {
+    //     //         $('body').append('<div class="backdrop">');
+    //     //     } 
+    // });
 }
 
 const writeUserData = async (email) => {

@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/modal.css">
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+    <script src="./script.js"></script>
 <!--
     
 TemplateMo 559 Zay Shop
@@ -27,35 +32,35 @@ https://templatemo.com/tm-559-zay-shop
 
 <body>
     <!-- Start Top Nav -->
-    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top" style="background-color: #20428B;">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:cs@weesmartvn.com" style="font-weight: 300;">cs@weesmartvn.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:(+84) 28 36 363 366">(+84) 28 36 363 366</a>
                 </div>
-                <div>
+                <!-- <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
-                </div>
+                </div> -->
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- Close Top Nav -->
 
 
     <!-- Header -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+            <!-- <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
                 Zay
-            </a>
-
+            </a> -->
+            <img src="./img/logo.png" alt="Wee" class="navbar-brand text-success logo h1 align-self-center">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,16 +69,16 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">Về chúng tôi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link" href="shop.html">Sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -101,10 +106,10 @@ https://templatemo.com/tm-559-zay-shop
             </div>
 
         </div>
-    </nav> -->
+    </nav>
     <!-- Close Header -->
 
-    <div class="nav-top container">
+    <!-- <div class="nav-top container">
         <div class="contact-left">
             <i class="fa fa-envelope">fa-envelope</i>
             <i class="fa fa-phone">(+84) 28 36 363 366</i>
@@ -115,9 +120,9 @@ https://templatemo.com/tm-559-zay-shop
             <i class="fa fa-twitter"></i>
             <i class="fa fa-linkedin"></i>
         </div>
-    </div>
-    <div class="nav-bottom container">
-        <img src="./img/logo.png" alt="Wee">
+    </div> -->
+    <!-- <div class="nav-bottom container">
+        <img src="./img/logo.png" alt="Wee" class="navbar-brand text-success logo h1 align-self-center">
         <ul class="menu">
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Về chúng tôi</a></li>
@@ -134,7 +139,7 @@ https://templatemo.com/tm-559-zay-shop
             
             <a href="#" class="fa fa-user gap"></a>
         </div>
-    </div>
+    </div> -->
 
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -334,10 +339,10 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
             <div class="row justify-content-center">
               <div class="col-lg-8 col-md-10">
                 <h2 class="my-text-secondary lh-1-7 mb-7 style" style="margin-bottom:80px; ">Đăng kí thông tin - Nhận ngay ưu đãi</h2>
-                <form class="row g-3 align-items-center w-lg-75 mx-auto" style="margin-bottom: 75px;">
+                <form class="row g-3 align-items-center w-lg-75 mx-auto form-subscribe" style="margin-bottom: 75px;">
                   <div class="col-sm">
                     <div class="input-group-icon d-flex" style=" border-radius: 10px; background-color: #FFFFFF; padding:13px;">
-                        <img class="input-box-icon" src="assets/img/mail.svg" width="17" alt="mail" /> <input class="form-control form-little-squirrel-control" style="border:none;" type="email" placeholder=" Enter email " aria-label="email" />
+                        <img class="input-box-icon" src="assets/img/mail.svg" width="17" alt="mail" /> <input class="form-control form-little-squirrel-control email-input" style="border:none;" type="text" placeholder=" Enter email " aria-label="email" />
                     </div>
                   </div>
                   <div class="col-sm-auto">
@@ -448,7 +453,12 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
 
     </footer>
     <!-- End Footer -->
-
+    <div class="modal">
+        <div class="content">
+          <div class="close"></div>
+          <p>  </p>
+        </div>
+      </div>
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
