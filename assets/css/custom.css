@@ -17,7 +17,6 @@ Custom Css
 
 h3.h2 {
     /* position: absolute; */
-height: 36px;
 left: 0%;
 right: 33.67%;
 top: 64.59px;
@@ -43,24 +42,30 @@ color: #20428B;
 top: -3.59px; */
 }
 
+.my-slide .block-content{
+
+}
+
 @media (max-width: 992px) {
     .my-img {
         width: 100%;
-        
-    /* left: 861.5px;
-    top: -3.59px; */
     }
-
     .custom-carousel{
         height: 888px;
     }
-  }
+}
 
-
+@media (max-width: 767px) {
+    .my-img {
+        width: 100%;
+    }
+    .custom-carousel{
+        height: 1000px;
+    }
+}
 
 div.subcribe {
     width: 68.8%;
-    height: 364.45px;
 
     background: rgba(251, 164, 171, 0.2);
     border-radius: 129px 20px 20px 20px;
