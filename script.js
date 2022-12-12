@@ -16,8 +16,6 @@ $(document).ready(async () => {
       
       // Initialize Realtime Database and get a reference to the service
       const database = firebase.database();
-
-      const number = await writeUserData('rexviet@gmail.com');
 });
 window.onload = async function(e){ 
     console.log("window.onload", e, Date.now() ,window.tdiff);
