@@ -72,7 +72,7 @@ const writeUserData = async (email) => {
     }
     let number;
     do {
-        number = randomInRange(50, 100);
+        number = randomInRange(50, 75);
     } while (await checkNumberExists(number));
     firebase.database().ref('subscribers/number/' + number).set({ email });
     firebase.database().ref('subscribers/email/' + encodeEmail(email)).set({ number: number });
