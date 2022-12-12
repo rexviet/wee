@@ -45,7 +45,7 @@ window.onload = async function(e){
     });
     $('button.btn').click(async (event) => {
         event.preventDefault();
-        const email = $('input.email-input').val();
+        const email = $('input.email-input').val().toLowerCase();
         console.log('email:',email );
         const number = await writeUserData(email);
         console.log('number:', number);
