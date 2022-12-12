@@ -15,13 +15,16 @@
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/modal.css">
     <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
     <script src="./script.js"></script>
-<!--
+    <!--
     
 TemplateMo 559 Zay Shop
 
@@ -32,14 +35,17 @@ https://templatemo.com/tm-559-zay-shop
 
 <body>
     <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top" style="background-color: #20428B;">
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top"
+        style="background-color: #20428B;">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:cs@weesmartvn.com" style="font-weight: 300;">cs@weesmartvn.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:cs@weesmartvn.com"
+                        style="font-weight: 300;">cs@weesmartvn.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:(+84) 28 36 363 366">(+84) 28 36 363 366</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:(+84) 28 36 363 366">(+84) 28
+                        36 363 366</a>
                 </div>
             </div>
         </div>
@@ -51,11 +57,14 @@ https://templatemo.com/tm-559-zay-shop
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
             <img src="./img/logo.png" alt="Wee" class="navbar-brand text-success logo h1 align-self-center">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
@@ -81,16 +90,19 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                         </div>
                     </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                        data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
                 </div>
             </div>
@@ -100,13 +112,14 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Close Header -->
 
     <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- data-bs-ride="carousel" -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide">
         <ol class="carousel-indicators">
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" style="height: 600px;">
+        <div class="carousel-inner custom-carousel">
             <div class="carousel-item active my-slide">
                 <div class="container">
                     <div class="row p-5">
@@ -118,8 +131,10 @@ https://templatemo.com/tm-559-zay-shop
                                 <h1 class="h1 text-success">Miếng dán thông minh Wee</h1>
                                 <h3 class="h2">Xoa dịu cơn đau nhanh chóng</h3>
                                 <p>
-                                    Tấm dệt may thông minh với cảm biến cơ thể, giúp miếng dán luôn giữ ở nhiệt độ do bạn điều chỉnh.
-Ngoài ra, với thiết kế nhỏ gọn giúp cho bạn có thể mang đi đến bất kỳ nơi đâu một cách dễ dàng. 
+                                    Tấm dệt may thông minh với cảm biến cơ thể, giúp miếng dán luôn giữ ở nhiệt độ do
+                                    bạn điều chỉnh.
+                                    Ngoài ra, với thiết kế nhỏ gọn giúp cho bạn có thể mang đi đến bất kỳ nơi đâu một
+                                    cách dễ dàng.
                                 </p>
                             </div>
                         </div>
@@ -137,8 +152,10 @@ Ngoài ra, với thiết kế nhỏ gọn giúp cho bạn có thể mang đi đ�
                                 <h1 class="h1 text-success">Cốc nguyệt san Wee</h1>
                                 <h3 class="h2">Thoải mái lên đến 12 tiếng</h3>
                                 <p>
-                                    Cốc được thiết kế đặc biệt để vừa vặn với âm đạo của phụ nữ, không gây tràn ra ngoài giúp bạn thoải mái vận động.
-Cốc nguyệt san được làm từ 100% silicone y tế, an toàn đưa vào cơ thể mà không hề gây kích ứng.
+                                    Cốc được thiết kế đặc biệt để vừa vặn với âm đạo của phụ nữ, không gây tràn ra ngoài
+                                    giúp bạn thoải mái vận động.
+                                    Cốc nguyệt san được làm từ 100% silicone y tế, an toàn đưa vào cơ thể mà không hề
+                                    gây kích ứng.
                                 </p>
                             </div>
                         </div>
@@ -156,8 +173,10 @@ Cốc nguyệt san được làm từ 100% silicone y tế, an toàn đưa vào 
                                 <h1 class="h1 text-success">Băng vệ sinh Wee</h1>
                                 <h3 class="h2">Mát dịu, khô thoáng cả ngày </h3>
                                 <p>
-                                    Công nghệ Ice Nano đến từ Nhật Bản mang đến sự mát lạnh dài lâu và kiểm soát mùi hiệu quả.
-Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm SAP hạt ép cho bạn cảm giác khô thoáng cả ngày.
+                                    Công nghệ Ice Nano đến từ Nhật Bản mang đến sự mát lạnh dài lâu và kiểm soát mùi
+                                    hiệu quả.
+                                    Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm SAP hạt ép cho bạn cảm giác
+                                    khô thoáng cả ngày.
                                 </p>
                             </div>
                         </div>
@@ -165,10 +184,12 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
+            role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
+            role="button" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
         </a>
     </div>
@@ -187,7 +208,7 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <!-- <a href="shop-single.html"> -->
-                            <img src="./assets/img/hw2-81 1.png" class="card-img-top" style="background: #20428B;">
+                        <img src="./assets/img/hw2-81 1.png" class="card-img-top" style="background: #20428B;">
                         <!-- </a> -->
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -210,7 +231,7 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                            <img src="./assets/img/HW4-81 1.png" class="card-img-top" alt="...">
+                        <img src="./assets/img/HW4-81 1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
@@ -232,7 +253,7 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                            <img src="./assets/img/HW3-81 1.png" class="card-img-top" alt="...">
+                        <img src="./assets/img/HW3-81 1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
@@ -274,26 +295,34 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
     <section style="padding: 43px 0;">
 
         <div class="container">
-          <div class="py-8 px-5 position-relative text-center" style="background-color: rgba(251, 164, 171, 0.2);border-radius: 129px 20px 20px 20px; height: 364.45px;">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 col-md-10">
-                <h2 class="my-text-secondary lh-1-7 mb-7 style" style="margin-bottom:80px; ">Đăng kí thông tin - Nhận ngay ưu đãi</h2>
-                <form class="row g-3 align-items-center w-lg-75 mx-auto form-subscribe" style="margin-bottom: 75px;">
-                  <div class="col-sm">
-                    <div class="input-group-icon d-flex" style=" border-radius: 10px; background-color: #FFFFFF; padding:13px;">
-                        <img class="input-box-icon" src="assets/img/mail.svg" width="17" alt="mail" /> <input class="form-control form-little-squirrel-control email-input" style="border:none;" type="text" placeholder=" Enter email " aria-label="email" />
+            <div class="py-8 px-5 position-relative text-center"
+                style="background-color: rgba(251, 164, 171, 0.2);border-radius: 129px 20px 20px 20px; height: 364.45px;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <h2 class="my-text-secondary lh-1-7 mb-7 style" style="margin-bottom:80px; ">Đăng kí thông tin -
+                            Nhận ngay ưu đãi</h2>
+                        <form class="row g-3 align-items-center w-lg-75 mx-auto form-subscribe"
+                            style="margin-bottom: 75px;">
+                            <div class="col-sm">
+                                <div class="input-group-icon d-flex"
+                                    style=" border-radius: 10px; background-color: #FFFFFF; padding:13px;">
+                                    <img class="input-box-icon" src="assets/img/mail.svg" width="17" alt="mail" />
+                                    <input class="form-control form-little-squirrel-control email-input"
+                                        style="border:none;" type="text" placeholder=" Enter email "
+                                        aria-label="email" />
+                                </div>
+                            </div>
+                            <div class="col-sm-auto">
+                                <button class="btn btn-danger orange-gradient-btn fs--1"
+                                    style="height: 65px; width:180px; border-radius:10px">Subscribe</button>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                  <div class="col-sm-auto">
-                    <button class="btn btn-danger orange-gradient-btn fs--1" style="height: 65px; width:180px; border-radius:10px" >Subscribe</button>
-                  </div>
-                </form>
-              </div>
+                </div>
             </div>
-          </div>
         </div><!-- end of .container-->
 
-      </section>
+    </section>
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
@@ -301,10 +330,13 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <div>
-                        <img class="logo-foot pb-3 border-light logo" src="./assets/img/Group 1.png" alt="" id="img1">
+                    <div class="block-footer">
+                        <div class="block-image">
+                            <img class="logo-foot pb-3 border-light logo" src="./assets/img/Group 1.png" alt=""
+                                id="img1">
+                        </div>
                     </div>
-                    <div style="border-bottom: 1px solid black; width: 90%;"></div>
+                    <!-- <div style="border-bottom: 1px solid black; width: 90%;"></div> -->
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -312,18 +344,22 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-light text-decoration-none" href="tel:(+84) 28 36 363 366">(+84) 28 36 363 366</a>
+                            <a class="text-light text-decoration-none" href="tel:(+84) 28 36 363 366">(+84) 28 36 363
+                                366</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-light text-decoration-none" href="mailto:cs@weesmartvn.com">cs@weesmartvn.com</a>
+                            <a class="text-light text-decoration-none"
+                                href="mailto:cs@weesmartvn.com">cs@weesmartvn.com</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light ">Sản phẩm</h2>
-                    <div style="border-bottom: 1px solid black; width: 90%;"></div>
+                    <div class="block-footer">
+                        <h2 class="h2 text-light ">Sản phẩm</h2>
+                    </div>
+                    <!-- <div style="border-bottom: 1px solid black; width: 90%;"></div> -->
 
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-light text-decoration-none">Miếng dán thông minh</a></li>
@@ -333,8 +369,10 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light ">Thông tin thêm</h2>
-                    <div style="border-bottom: 1px solid black; width: 90%;"></div>
+                    <div class="block-footer">
+                        <h2 class="h2 text-light ">Thông tin thêm</h2>
+                    </div>
+                    <!-- <div style="border-bottom: 1px solid black; width: 90%;"></div> -->
 
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-light text-decoration-none">Trang chủ</a></li>
@@ -354,16 +392,20 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -382,8 +424,9 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-footer">
-                            Copyright &copy; 2022 Wee Smart VN 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Copyright &copy; 2022 Wee Smart VN
+                            | Designed by <a rel="sponsored" href="https://templatemo.com"
+                                target="_blank">TemplateMo</a>
                         </p>
                     </div>
                 </div>
@@ -394,10 +437,10 @@ Với thiết kế 7 lớp, đặc biệt là lớp siêu thấm hút từ tấm
     <!-- End Footer -->
     <div class="modal">
         <div class="content">
-            
-          <div class="close"></div>
-          <h1>Your number is...</h1>
-          <p>  </p>
+
+            <div class="close"></div>
+            <h1>Your number is...</h1>
+            <p> </p>
         </div>
     </div>
     <!-- Start Script -->
